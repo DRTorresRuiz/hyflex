@@ -478,7 +478,7 @@ public class BinPacking extends ProblemDomain {
 				for (int x = 0; x < temporaryBinVector.size()-1; x++) {//loop the bins, miss the empty bin at the end
 					int numberofpiecesinthisbin = (temporaryBinVector.get(x)).numberOfPiecesInThisBin();
 					if (numberofpiecesinthisbin >= averagenumberofpieces) {
-						v.add(new Integer(x));}//store the index of this bin
+						v.add(Integer.valueOf(x));}//store the index of this bin
 				}//end looping bins to get a list of all the bins with greater than average number of pieces
 				double[] emptinesses = new double[v.size()];
 				double totalemptiness = 0;
@@ -627,10 +627,10 @@ public class BinPacking extends ProblemDomain {
 			ListIterator<Piece> piecesinbin = b.piecesInThisBin.listIterator();
 			while (piecesinbin.hasNext()) {
 				Piece p = piecesinbin.next();
-				if (numberspacked.contains(new Integer((int)p.getNumber()))) {
+				if (numberspacked.contains(Integer.valueOf((int)p.getNumber()))) {
 					piecesinbin.remove();
 				} else {
-					numberspacked.add(new Integer((int)p.getNumber()));
+					numberspacked.add(Integer.valueOf((int)p.getNumber()));
 				}
 			}
 			if (b.numberOfPiecesInThisBin() == 0) {

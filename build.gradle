@@ -1,7 +1,25 @@
 allprojects {
+    apply plugin: 'idea'
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+
+    repositories {
+        mavenCentral()
+    }
+
     group 'hyflex'
     version '1.0-SNAPSHOT'
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+    }
 }
+
 
 subprojects {
     apply plugin: 'java'

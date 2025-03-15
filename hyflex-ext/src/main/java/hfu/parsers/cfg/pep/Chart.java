@@ -29,7 +29,7 @@ import java.util.TreeMap;
  * @version $LastChangedRevision: 1807 $
  */
 public class Chart {
-	static final Integer NULL_INDEX = new Integer(-1);
+	static final Integer NULL_INDEX = Integer.valueOf(-1);
 	
 	SortedMap<Integer, Set<Edge>> edgeSets;
 	

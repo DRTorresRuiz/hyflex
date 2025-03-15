@@ -8,7 +8,7 @@ import java.util.Random;
  * 
  * Sub-classes of ProblemDomain provide the representations of the various problem
  * domains for the competition.
- * @author Antonio Vázquez, Matthew Hyde, Gabriela Ochoa, Tim Curtois. [jav,mvh,gxo,tec]@cs.nott.ac.uk
+ * @author Antonio Vazquez, Matthew Hyde, Gabriela Ochoa, Tim Curtois. [jav,mvh,gxo,tec]@cs.nott.ac.uk
  */
 public abstract class ProblemDomain {
 

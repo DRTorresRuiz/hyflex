@@ -95,7 +95,7 @@ public class SAT extends ProblemDomain {
 		for (int i = 0; i < numberOfVariables; i++) {
 			if (numbersofbrokenclauses[i] == minimum) {
 				//System.out.print(i + " ");
-				jointminimums.add(new Integer(i));
+				jointminimums.add(Integer.valueOf(i));
 			}
 		}//System.out.println();
 		return jointminimums;
@@ -186,7 +186,7 @@ public class SAT extends ProblemDomain {
 			for (int x = 0; x < randomBrokenClause.numberOfVariables(); x++) {
 				negativeGains[x] = getNegativeGain(tempSolution, randomBrokenClause.variablenumbers[x]);
 				if (negativeGains[x] == 0) {
-					variablesWithNegativeGain0.add(new Integer(randomBrokenClause.variablenumbers[x]));//save it
+					variablesWithNegativeGain0.add(Integer.valueOf(randomBrokenClause.variablenumbers[x]));//save it
 				}
 			}
 			if (!variablesWithNegativeGain0.isEmpty()) {//if any variables have negative gain 0, then flip one of those, chosen randomly
@@ -205,7 +205,7 @@ public class SAT extends ProblemDomain {
 				Vector<Integer> jointminimums = new Vector<Integer>(randomBrokenClause.numberOfVariables());//the numbers of the variables that have the best negative gain
 				for (int i = 0; i < randomBrokenClause.numberOfVariables(); i++) {
 					if (negativeGains[i] == minimum) {//if the negative gain of this variable in the clause is equal to the minimum we found before
-						jointminimums.add(new Integer(randomBrokenClause.variablenumbers[i]));//store the number of the variable
+						jointminimums.add(Integer.valueOf(randomBrokenClause.variablenumbers[i]));//store the number of the variable
 					}
 				}//end looping the variables in the clause
 				tempSolution.variables[jointminimums.get(rng.nextInt(jointminimums.size()))].permanentflip();
@@ -265,7 +265,7 @@ public class SAT extends ProblemDomain {
 		Vector<Integer> jointminimums = new Vector<Integer>(randomBrokenClause.numberOfVariables());
 		for (int i = 0; i < randomBrokenClause.numberOfVariables(); i++) {
 			if (numbersofbrokenclauses[i] == minimum) {
-				jointminimums.add(new Integer(i));
+				jointminimums.add(Integer.valueOf(i));
 			}
 		}
 		//System.out.print("Tied for the lead: ");
@@ -296,7 +296,7 @@ public class SAT extends ProblemDomain {
 						jointminimums = new Vector<Integer>(randomBrokenClause.numberOfVariables());
 						for (int q = 0; q < randomBrokenClause.numberOfVariables(); q++) {
 							if (numbersofbrokenclauses[q] == secondminimum) {
-								jointminimums.add(new Integer(q));}
+								jointminimums.add(Integer.valueOf(q));}
 						}
 						if (jointminimums.isEmpty()) {
 							System.out.println(minimum + " " + secondminimum + " " + randomBrokenClause.numberOfVariables());

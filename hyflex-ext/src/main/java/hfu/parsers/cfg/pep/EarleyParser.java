@@ -324,7 +324,7 @@ public class EarleyParser {
 	public Parse parse(Iterable<String> tokens, Category seed) 
 			throws PepException {
 		Chart chart = new Chart();
-		Integer index = new Integer(0);
+		Integer index = Integer.valueOf(0);
 		
 		Parse parse = new Parse(seed, chart);
 		
@@ -486,7 +486,7 @@ public class EarleyParser {
 					if(dr.activeCategory.terminal && extended_equals(dr.activeCategory.name,token)) {						
 						Edge newEdge = Edge.scan(edge, token);
 						Integer successor // save next index
-							= new Integer(index.intValue() + 1); 
+							= Integer.valueOf(index.intValue() + 1);
 						if(chart.addEdge(successor, newEdge)) {
 							fireEdgeScanned(successor, newEdge);
 						}
@@ -552,7 +552,7 @@ public class EarleyParser {
 	 * @param index The index to make completions at.
 	 */
 	void completeForEdge(Chart chart, Edge edge, Integer index) {
-		Integer eo = new Integer(edge.origin);
+		Integer eo = Integer.valueOf(edge.origin);
 		// can only make completions based on passive edges
 		if(edge.isPassive() && chart.containsEdges(eo)) {
 			// get all edges at this edge's origin

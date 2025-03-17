@@ -441,7 +441,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				str += ";";
 		}
 		
-		//log.info("### HEURISTIC CALLS: "+str);
+		//log.debug("### HEURISTIC CALLS: "+str);
 	}
 	
 	/**
@@ -455,7 +455,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				str += ";";
 		}
 		
-		//log.info("### RANK LIST: "+str);
+		//log.debug("### RANK LIST: "+str);
 	}
 	
 	/**
@@ -469,7 +469,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				str += ";";
 		}
 		
-		//log.info("### TABU DURATION LIST: "+str);
+		//log.debug("### TABU DURATION LIST: "+str);
 	}
 	
 	/**
@@ -485,7 +485,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				str += ";";
 		}
 		
-		log.info(str);
+		log.debug(str);
 	}
 
 	/**
@@ -509,7 +509,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				str += ";";
 		}
 		
-		//log.info("### TABU COUNTER: "+str);
+		//log.debug("### TABU COUNTER: "+str);
 	}
 	
 	
@@ -742,7 +742,7 @@ public class AdaptiveLimitedLAassistedDHSMentorSTD extends SelectionMethod {
 				isHeurExcludedOverStd[i] = true;
 
 				if(Print.selection){
-					log.info(" ###### STD Exclusion : heuristic="+i+" with LRM="+learningMultRateList[i]+
+					log.debug(" ###### STD Exclusion : heuristic="+i+" with LRM="+learningMultRateList[i]+
 							 " (tabuDur="+tabuDurationList[i]+" - STD="+std+")\n\n");
 				}
 				

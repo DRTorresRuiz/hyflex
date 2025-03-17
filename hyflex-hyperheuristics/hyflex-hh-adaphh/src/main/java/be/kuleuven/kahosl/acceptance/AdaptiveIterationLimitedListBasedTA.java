@@ -211,7 +211,7 @@ public class AdaptiveIterationLimitedListBasedTA extends AcceptanceCriterion {
 					movingAvgImpBestIteration = (int)Math.ceil((double)(((iterAdaptationListLength-1)*iterationLimit+tempNewBestReqIter)/iterAdaptationListLength));
 
 					if(Print.acceptance){
-						log.info("iterationLimit="+iterationLimit+"  ... tempNewBestReqIter="+tempNewBestReqIter+
+						log.debug("iterationLimit="+iterationLimit+"  ... tempNewBestReqIter="+tempNewBestReqIter+
 								" ... tempTimeFactor="+tempTimeFactor+" :: consecWorseMoveAcceptanceCounter="+consecWorseMoveAcceptanceCounter+
 								" :: movingAvgImpBestIteration="+movingAvgImpBestIteration+" :: passedIter="+passedIter);
 					}
@@ -228,7 +228,7 @@ public class AdaptiveIterationLimitedListBasedTA extends AcceptanceCriterion {
 				iterationLimitForThresholdChange = adaptationLimitMultiplier*iterationLimit;
 				 
 				if(Print.acceptance){
-					log.info("IterLimit updated = "+iterationLimit+
+					log.debug("IterLimit updated = "+iterationLimit+
 							 " :: iterLimitThresholdChange updated = "+iterationLimitForThresholdChange);
 				}
 				
@@ -249,7 +249,7 @@ public class AdaptiveIterationLimitedListBasedTA extends AcceptanceCriterion {
 				limitCounter = 0;
 
 				if(Print.acceptance){
-					log.info("A Worsening Move Accepted: "+newFitness+
+					log.debug("A Worsening Move Accepted: "+newFitness+
 					         " :: THRESHOLD = ("+threshold+") - iterLimit="+iterationLimit+
 					         " (threshInx="+thresholdIndex+" : ListLength="+listLength+" )");
 				}
@@ -269,7 +269,7 @@ public class AdaptiveIterationLimitedListBasedTA extends AcceptanceCriterion {
     	
     	
     	if((numberOfIterations%Print.iterationNum) == 0 && Print.acceptance){
-    		log.info("THRESHOLD = ("+threshold+") - iterationLimit="+iterationLimit);
+    		log.debug("THRESHOLD = ("+threshold+") - iterationLimit="+iterationLimit);
     	}
     	
     	/* Increment the number of iterations */
@@ -283,21 +283,21 @@ public class AdaptiveIterationLimitedListBasedTA extends AcceptanceCriterion {
 			
 			if(thresholdIndex <= bestFitnessList.size()-1){
 				if(Print.acceptance){
-					log.info("Threshold value is CHANGED FROM "+threshold+"  (thresholdIndex="+thresholdIndex+")");
+					log.debug("Threshold value is CHANGED FROM "+threshold+"  (thresholdIndex="+thresholdIndex+")");
 				}
 				
 				/* Set the threshold level */
 				threshold = bestFitnessList.get(thresholdIndex);
 				
 				if(Print.acceptance){
-					log.info(" TO "+threshold);
+					log.debug(" TO "+threshold);
 				}
 			}else{ /* If the threshold level is reached to its maximum level */
 				/* Consider the search is at stuck */
 				Vars.isAtStuck = true;
 
 				if(Print.acceptance){
-					log.info("Search is at stuck (explore better level of change values for the heuristics' parameters) !");
+					log.debug("Search is at stuck (explore better level of change values for the heuristics' parameters) !");
 				}
 				
 				/* Decide about whether to restart or not */

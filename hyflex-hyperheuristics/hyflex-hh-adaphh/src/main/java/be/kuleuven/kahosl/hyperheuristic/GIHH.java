@@ -368,7 +368,6 @@ public class GIHH extends HyperHeuristic implements Serializable {
 		problem.setMemorySize(12); 	/* Create a memory to save solutions */
 		
 
-		
 		String bestSlnFoundAsStr = ""; /* The best solution found in a string */
 
 		Vars.restartSearch = false; //Reset value for the next run (the variable is static)
@@ -380,7 +379,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 		/* Create an inital solution */
 		problem.initialiseSolution(0);
 		/* Copy the initial solution to the best solution location in the solution memory */
-		problem.copySolution(0, 10); 
+		problem.copySolution(0, 10);
 		/* Set initial fitness parameters */
 		bestFitness = currentFitness = newFitness = problem.getFunctionValue(0);
 		/* Set the initial solution as the best solution in a string */
@@ -400,7 +399,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 		}
 	
 		if(Print.hyperheuristic){
-			log.info("----------------------------------------------------------------\n" +
+			log.debug("----------------------------------------------------------------\n" +
 			         " >> HH Started ! (#LLH="+numberOfHeuristics+")"+
 			         "\n----------------------------------------------------------------");
 		}
@@ -451,7 +450,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 						Vars.useOverallBestSln = true;
 
 						if(Print.hyperheuristic){
-							log.info("RE-INITIALIZATION CANCELLED (numberOfRestartsWithoutNewBest limit reached to "+
+							log.debug("RE-INITIALIZATION CANCELLED (numberOfRestartsWithoutNewBest limit reached to "+
 									  numberOfRestartsWithoutNewBest+")");
 						}
 						
@@ -463,7 +462,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 						Vars.useOverallBestSln = true;
 						
 						if(Print.hyperheuristic){
-							log.info("FIRST RE-INITIALIZATION CANCELLED (INACTIVE) !!");
+							log.debug("FIRST RE-INITIALIZATION CANCELLED (INACTIVE) !!");
 						}
 						
 						Vars.noMoreRestart = true;
@@ -523,7 +522,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 				numberOfRestarts++;
 				
 				if(Print.hyperheuristic){
-					log.info("RE-INITIALIZATION !!");
+					log.debug("RE-INITIALIZATION !!");
 				}
 			}else if(Vars.useOverallBestSln && numberOfRestarts > 0){ //If the search was restarted before and re-initialisation is disabled
 				/*
@@ -538,7 +537,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 				/* Update the overall best solution if the most recent solution is better than the current overall best solution */
 				if(bestFitness > problem.getFunctionValue(11)){
 					if(Print.hyperheuristic){
-						log.info("USE OVERALL BEST SOLUTION !!");
+						log.debug("USE OVERALL BEST SOLUTION !!");
 					}
 					
 					problem.copySolution(11, 0);
@@ -1208,7 +1207,7 @@ public class GIHH extends HyperHeuristic implements Serializable {
 	 * Print current state of the search
 	 */
 	private void printCurrentState(){
-		log.info("  >> iter="+ numberOfIterations+ " (rst="+numberOfRestarts+") new=" +newFitness+ 
+		log.debug("  >> iter="+ numberOfIterations+ " (rst="+numberOfRestarts+") new=" +newFitness+ 
                 " curr=" + currentFitness +  " best=" + bestFitness +
                 " :: ("+(System.currentTimeMillis()-startTime)/1000F+" | "+totalExecTime/1000F+
                 ") @ phL="+Vars.phaseLength+" (nonTabuHr#="+(numberOfHeuristics-selection.getNumberOfTabuHeuristics())+" outOf "+numberOfHeuristics+") "+

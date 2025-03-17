@@ -97,7 +97,7 @@ public abstract class HyperHeuristic {
 	 * method has been called at least once.
 	 * @return the objective function value of the best solution found within the time limit
 	 * */
-	public final double getBestSolutionValue()
+	public double getBestSolutionValue()
 	{
 		if (lastbestsolution == -1) {
 			System.err.println("The hasTimeExpired() method has not been called yet. It must be called at least once before a call to getBestSolutionValue()");

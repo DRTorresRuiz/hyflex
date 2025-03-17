@@ -131,8 +131,8 @@ public class CHClient {
 				
 		
 
-		log.info("Tasks created!"+taskList.size());
-		log.info("Submitting tasks...");
+		log.debug("Tasks created!"+taskList.size());
+		log.debug("Submitting tasks...");
 		
 		boolean succes = false;
 		while(!succes){
@@ -141,12 +141,12 @@ public class CHClient {
 				client.submit(taskList, null);
 				stop = System.currentTimeMillis();
 			
-				log.info("Execution of all tasks took: "+(stop-start)+" ms");
+				log.debug("Execution of all tasks took: "+(stop-start)+" ms");
 				succes=true;
 			} catch (Exception e) {
 				log.error("Connection failed..."+e);
 			}
 		}
-		log.info("All tasks are completed...");
+		log.debug("All tasks are completed...");
 	}
 }

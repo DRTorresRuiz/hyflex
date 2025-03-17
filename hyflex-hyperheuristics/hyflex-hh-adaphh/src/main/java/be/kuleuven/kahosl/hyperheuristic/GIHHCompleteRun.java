@@ -112,7 +112,7 @@ public class GIHHCompleteRun {
 											 problemList[pr].toString().replace(" ", "")+"_INST"+ins+"_TM"+
 											 (int)(Vars.totalExecutionTime/1000.0)+"_TTR"+Vars.numberOfTrials+"_TR"+(tr+1)+"_";
 							
-							log.info(" @@ ResultFileName: "+resultFileName);
+							log.debug(" @@ ResultFileName: "+resultFileName);
 							
 							ProblemDomain problem = null;
 							

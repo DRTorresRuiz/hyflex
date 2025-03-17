@@ -7,10 +7,10 @@ import AbstractClasses.ProblemDomain;
 public class VRP extends ProblemDomain
 {
 
-         private Instance instance;
+         protected Instance instance;
          private Solution []solutions;
          double bestSolutionValue = Double.POSITIVE_INFINITY;
-         Solution bestSolution = new Solution();
+         protected Solution bestSolution = new Solution();
          private final int[] mutations = new int[]{0,1,7};
          private final int[] ruinRecreates = new int[]{2,3};
          private final int[] localSearches = new int[]{4,8,9};
@@ -1935,7 +1935,7 @@ public class VRP extends ProblemDomain
                  }
          }
 
-         double calcDistance(Location l1, Location l2)
+         protected double calcDistance(Location l1, Location l2)
          {
                  int xdiff = Math.abs(l1.getXCoord()-l2.getXCoord());
                  int ydiff = Math.abs(l1.getYCoord()-l2.getYCoord());

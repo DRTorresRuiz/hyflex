@@ -70,13 +70,13 @@ public class GIHH extends HyperHeuristic implements Serializable {
 	private long totalExecTime;			
 	
 	/** The quality of the current solution **/
-	private double currentFitness;		
+	protected double currentFitness;
 	
 	/** The quality of the new solution **/
-	private double newFitness;			
+	private double newFitness;
 	
 	/** The quality of the current best solution **/
-	private double bestFitness;			
+	protected double bestFitness;
 	
 	/** The heuristic selection mechanism **/
 	private SelectionMethod selection;	

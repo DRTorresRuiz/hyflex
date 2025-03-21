@@ -133,127 +133,127 @@ public class Instance {
         } else if ( id == 55 ) {
             fileName += ( "Solomon_100_customer_instances/RC/RC208.txt" );
         } else if ( id == 56 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_1.TXT" );
         } else if ( id == 57 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_2.TXT" );
         } else if ( id == 58 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_3.TXT" );
         } else if ( id == 59 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_4.TXT" );
         } else if ( id == 60 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_5.TXT" );
         } else if ( id == 61 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_6.TXT" );
         } else if ( id == 62 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_7.TXT" );
         } else if ( id == 63 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_8.TXT" );
         } else if ( id == 64 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_9.TXT" );
         } else if ( id == 65 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C1_10_10.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C1_10_10.TXT" );
         } else if ( id == 66 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_1.TXT" );
         } else if ( id == 67 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_2.TXT" );
         } else if ( id == 68 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_3.TXT" );
         } else if ( id == 69 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_4.TXT" );
         } else if ( id == 70 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_5.TXT" );
         } else if ( id == 71 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_6.TXT" );
         } else if ( id == 72 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_7.TXT" );
         } else if ( id == 73 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_8.TXT" );
         } else if ( id == 74 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_9.TXT" );
         } else if ( id == 75 ) {
-            fileName += ( "Homberger_1000_customer_instances/C/C2_10_10.txt" );
+            fileName += ( "Homberger_1000_customer_instances/C/C2_10_10.TXT" );
         } else if ( id == 76 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_1.TXT" );
         } else if ( id == 77 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_2.TXT" );
         } else if ( id == 78 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_3.TXT" );
         } else if ( id == 79 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_4.TXT" );
         } else if ( id == 80 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_5.TXT" );
         } else if ( id == 81 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_6.TXT" );
         } else if ( id == 82 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_7.TXT" );
         } else if ( id == 83 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_8.TXT" );
         } else if ( id == 84 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_9.TXT" );
         } else if ( id == 85 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R1_10_10.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R1_10_10.TXT" );
         } else if ( id == 86 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_1.TXT" );
         } else if ( id == 87 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_2.TXT" );
         } else if ( id == 88 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_3.TXT" );
         } else if ( id == 89 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_4.TXT" );
         } else if ( id == 90 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_5.TXT" );
         } else if ( id == 91 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_6.TXT" );
         } else if ( id == 92 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_7.TXT" );
         } else if ( id == 93 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_8.TXT" );
         } else if ( id == 94 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_9.TXT" );
         } else if ( id == 95 ) {
-            fileName += ( "Homberger_1000_customer_instances/R/R2_10_10.txt" );
+            fileName += ( "Homberger_1000_customer_instances/R/R2_10_10.TXT" );
         } else if ( id == 96 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_1.TXT" );
         } else if ( id == 97 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_2.TXT" );
         } else if ( id == 98 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_3.TXT" );
         } else if ( id == 99 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_4.TXT" );
         } else if ( id == 100 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_5.TXT" );
         } else if ( id == 101 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_6.TXT" );
         } else if ( id == 102 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_7.TXT" );
         } else if ( id == 103 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_8.TXT" );
         } else if ( id == 104 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC1_10_9.TXT" );
         } else if ( id == 105 ) {
             fileName
-                    += ( "Homberger_1000_customer_instances/RC/RC1_10_10.txt" );
+                    += ( "Homberger_1000_customer_instances/RC/RC1_10_10.TXT" );
         } else if ( id == 106 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_1.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_1.TXT" );
         } else if ( id == 107 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_2.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_2.TXT" );
         } else if ( id == 108 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_3.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_3.TXT" );
         } else if ( id == 109 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_4.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_4.TXT" );
         } else if ( id == 110 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_5.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_5.TXT" );
         } else if ( id == 111 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_6.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_6.TXT" );
         } else if ( id == 112 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_7.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_7.TXT" );
         } else if ( id == 113 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_8.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_8.TXT" );
         } else if ( id == 114 ) {
-            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_9.txt" );
+            fileName += ( "Homberger_1000_customer_instances/RC/RC2_10_9.TXT" );
         } else if ( id == 115 ) {
             fileName
-                    += ( "Homberger_1000_customer_instances/RC/RC2_10_10.txt" );
+                    += ( "Homberger_1000_customer_instances/RC/RC2_10_10.TXT" );
         }
 
         BufferedReader reader = null;
